@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF10C8692C05FB02005D43BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C8682C05FB02005D43BC /* AppDelegate.swift */; };
+		FF10C86B2C05FB02005D43BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C86A2C05FB02005D43BC /* SceneDelegate.swift */; };
+		FF10C86D2C05FB02005D43BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C86C2C05FB02005D43BC /* ViewController.swift */; };
+		FF10C8702C05FB02005D43BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF10C86E2C05FB02005D43BC /* Main.storyboard */; };
+		FF10C8722C05FB03005D43BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF10C8712C05FB03005D43BC /* Assets.xcassets */; };
+		FF10C8752C05FB03005D43BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF10C8732C05FB03005D43BC /* LaunchScreen.storyboard */; };
+		FF10C87D2C06008E005D43BC /* TexturedQuad.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF10C87C2C06008E005D43BC /* TexturedQuad.metal */; };
+		FF10C8862C061B48005D43BC /* FrameUniforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C8852C061B48005D43BC /* FrameUniforms.swift */; };
+		FF10C8882C062F38005D43BC /* Tracer.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF10C8872C062F38005D43BC /* Tracer.metal */; };
+		FF10C88A2C062F48005D43BC /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C8892C062F48005D43BC /* Renderer.swift */; };
+		FF10C88D2C0658F4005D43BC /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C88C2C0658F4005D43BC /* Scene.swift */; };
+		FF10C88F2C08A74D005D43BC /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10C88E2C08A74D005D43BC /* Camera.swift */; };
+		FF335C702C0C9D4C0093EE2A /* AccumulationTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF335C6F2C0C9D4C0093EE2A /* AccumulationTexture.swift */; };
+		FF335C722C0CA1E30093EE2A /* RandomTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF335C712C0CA1E30093EE2A /* RandomTexture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF10C8652C05FB02005D43BC /* Raytracing In One Weekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raytracing In One Weekend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF10C8682C05FB02005D43BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF10C86A2C05FB02005D43BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF10C86C2C05FB02005D43BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF10C86F2C05FB02005D43BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF10C8712C05FB03005D43BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF10C8742C05FB03005D43BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF10C8762C05FB03005D43BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF10C87C2C06008E005D43BC /* TexturedQuad.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TexturedQuad.metal; sourceTree = "<group>"; };
+		FF10C87E2C060554005D43BC /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		FF10C87F2C060572005D43BC /* RaytracingInOneWeekend-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaytracingInOneWeekend-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF10C8852C061B48005D43BC /* FrameUniforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameUniforms.swift; sourceTree = "<group>"; };
+		FF10C8872C062F38005D43BC /* Tracer.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Tracer.metal; sourceTree = "<group>"; };
+		FF10C8892C062F48005D43BC /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		FF10C88C2C0658F4005D43BC /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		FF10C88E2C08A74D005D43BC /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		FF335C6F2C0C9D4C0093EE2A /* AccumulationTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulationTexture.swift; sourceTree = "<group>"; };
+		FF335C712C0CA1E30093EE2A /* RandomTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTexture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF10C8622C05FB02005D43BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF10C85C2C05FB01005D43BC = {
+			isa = PBXGroup;
+			children = (
+				FF10C8672C05FB02005D43BC /* RaytracingInOneWeekend */,
+				FF10C8662C05FB02005D43BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF10C8662C05FB02005D43BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF10C8652C05FB02005D43BC /* Raytracing In One Weekend.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF10C8672C05FB02005D43BC /* RaytracingInOneWeekend */ = {
+			isa = PBXGroup;
+			children = (
+				FF10C8832C060F01005D43BC /* Rendering */,
+				FF10C8822C060ED4005D43BC /* Display */,
+				FF10C8682C05FB02005D43BC /* AppDelegate.swift */,
+				FF10C86A2C05FB02005D43BC /* SceneDelegate.swift */,
+				FF10C8712C05FB03005D43BC /* Assets.xcassets */,
+				FF10C8762C05FB03005D43BC /* Info.plist */,
+				FF10C87F2C060572005D43BC /* RaytracingInOneWeekend-Bridging-Header.h */,
+			);
+			path = RaytracingInOneWeekend;
+			sourceTree = "<group>";
+		};
+		FF10C8822C060ED4005D43BC /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				FF10C86C2C05FB02005D43BC /* ViewController.swift */,
+				FF10C86E2C05FB02005D43BC /* Main.storyboard */,
+				FF10C8732C05FB03005D43BC /* LaunchScreen.storyboard */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		FF10C8832C060F01005D43BC /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				FF10C8872C062F38005D43BC /* Tracer.metal */,
+				FF10C87C2C06008E005D43BC /* TexturedQuad.metal */,
+				FF10C87E2C060554005D43BC /* ShaderTypes.h */,
+				FF10C8852C061B48005D43BC /* FrameUniforms.swift */,
+				FF10C8892C062F48005D43BC /* Renderer.swift */,
+				FF10C88E2C08A74D005D43BC /* Camera.swift */,
+				FF10C88C2C0658F4005D43BC /* Scene.swift */,
+				FF335C6F2C0C9D4C0093EE2A /* AccumulationTexture.swift */,
+				FF335C712C0CA1E30093EE2A /* RandomTexture.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF10C8642C05FB02005D43BC /* Raytracing In One Weekend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF10C8792C05FB03005D43BC /* Build configuration list for PBXNativeTarget "Raytracing In One Weekend" */;
+			buildPhases = (
+				FF10C8612C05FB02005D43BC /* Sources */,
+				FF10C8622C05FB02005D43BC /* Frameworks */,
+				FF10C8632C05FB02005D43BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raytracing In One Weekend";
+			productName = RaytracingInOneWeekend;
+			productReference = FF10C8652C05FB02005D43BC /* Raytracing In One Weekend.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF10C85D2C05FB01005D43BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FF10C8642C05FB02005D43BC = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = FF10C8602C05FB01005D43BC /* Build configuration list for PBXProject "RaytracingInOneWeekend" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF10C85C2C05FB01005D43BC;
+			productRefGroup = FF10C8662C05FB02005D43BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF10C8642C05FB02005D43BC /* Raytracing In One Weekend */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF10C8632C05FB02005D43BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF10C8752C05FB03005D43BC /* LaunchScreen.storyboard in Resources */,
+				FF10C8722C05FB03005D43BC /* Assets.xcassets in Resources */,
+				FF10C8702C05FB02005D43BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF10C8612C05FB02005D43BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF10C8882C062F38005D43BC /* Tracer.metal in Sources */,
+				FF10C87D2C06008E005D43BC /* TexturedQuad.metal in Sources */,
+				FF10C88A2C062F48005D43BC /* Renderer.swift in Sources */,
+				FF10C86D2C05FB02005D43BC /* ViewController.swift in Sources */,
+				FF10C88D2C0658F4005D43BC /* Scene.swift in Sources */,
+				FF10C8692C05FB02005D43BC /* AppDelegate.swift in Sources */,
+				FF335C702C0C9D4C0093EE2A /* AccumulationTexture.swift in Sources */,
+				FF10C86B2C05FB02005D43BC /* SceneDelegate.swift in Sources */,
+				FF10C8862C061B48005D43BC /* FrameUniforms.swift in Sources */,
+				FF335C722C0CA1E30093EE2A /* RandomTexture.swift in Sources */,
+				FF10C88F2C08A74D005D43BC /* Camera.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF10C86E2C05FB02005D43BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF10C86F2C05FB02005D43BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF10C8732C05FB03005D43BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF10C8742C05FB03005D43BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF10C8772C05FB03005D43BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Raytracing In One Weekend";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF10C8782C05FB03005D43BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "Raytracing In One Weekend";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF10C87A2C05FB03005D43BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 534A4AR853;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaytracingInOneWeekend/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raytracing In One Weekend";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.fluxehub.RaytracingInOneWeekend;
+				PRODUCT_NAME = "Raytracing In One Weekend";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RaytracingInOneWeekend/RaytracingInOneWeekend-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF10C87B2C05FB03005D43BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 534A4AR853;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaytracingInOneWeekend/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raytracing In One Weekend";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.fluxehub.RaytracingInOneWeekend;
+				PRODUCT_NAME = "Raytracing In One Weekend";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RaytracingInOneWeekend/RaytracingInOneWeekend-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF10C8602C05FB01005D43BC /* Build configuration list for PBXProject "RaytracingInOneWeekend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF10C8772C05FB03005D43BC /* Debug */,
+				FF10C8782C05FB03005D43BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF10C8792C05FB03005D43BC /* Build configuration list for PBXNativeTarget "Raytracing In One Weekend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF10C87A2C05FB03005D43BC /* Debug */,
+				FF10C87B2C05FB03005D43BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF10C85D2C05FB01005D43BC /* Project object */;
+}
