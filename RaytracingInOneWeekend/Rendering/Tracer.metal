@@ -220,7 +220,7 @@ kernel void trace(uint2                                     threadId            
                     if (cannotRefract || reflectance(cosTheta, ri) > halton(haltonIndex, bounce + 6)) {
                         ray.direction = reflect(normalizedDirection, payload.normal);
                     } else {
-                        ray.direction = refract(normalizedDirection, payload.normal, ri / 2);
+                        ray.direction = refract(normalizedDirection, payload.normal, ri);
                     }
 
                     break;
